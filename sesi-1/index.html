@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Profile</title>
+    <style>
+      body {
+        margin: 5px;
+        font-family: Arial, sans-serif;
+        border: 1px solid black;
+      }
+
+      .all-section {
+        text-align: center;
+      }
+
+      /* ===== SECTION 1 - NAVIGASI ===== */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        color: black;
+        border-bottom: 2px solid black;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+      }
+
+      /* ===== SECTION 2 - HEADER ===== */
+      .header-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 40px;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .header-section .img {
+        width: 600px;
+        height: 400px;
+        background-color: #ddd;
+        border-radius: 10px;
+      }
+      .header-text h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      .header-text p {
+        margin-bottom: 20px;
+      }
+      .header-text button {
+        font-size: 16px;
+        background-color: #ddd;
+        border: none;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      /* ===== SECTION 3 - BIODATA ===== */
+      .biodata {
+        padding: 50px 40px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+      .biodata h2 {
+        font-size: 28px;
+      }
+      .box-container {
+        margin-top: 30px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+        justify-content: center;
+        gap: 20px;
+      }
+      .box {
+        background: #ddd;
+        padding: 25px;
+        text-align: center;
+        border: 2px solid rgb(210, 209, 209);
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ===== SECTION 4 - PORTOFOLIO ===== */
+      .portfolio {
+        padding: 50px 40px;
+      }
+      .portfolio-items {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+      .portfolio-item {
+        padding: 15px;
+        border: 2px solid black;
+      }
+
+      .item {
+        width: 350px;
+        height: 200px;
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== SECTION 1: NAVIGASI ===== -->
+    <nav>
+      <div class="brand">Brand</div>
+      <ul>
+        <li><a href="#header">Header</a></li>
+        <li><a href="#biodata">Biodata</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===== SECTION 2: HEADER ===== -->
+    <section class="header-section" id="header">
+      <div class="header-text">
+        <h1>Selamat Datang di Website Saya</h1>
+        <p>
+          Ini adalah contoh header dengan dua kolom, Kolom kiri berisi teks
+          seperti ini.
+        </p>
+        <button>Pelajari lebih lanjut</button>
+      </div>
+      <div class="img"></div>
+    </section>
+
+    <!-- ===== SECTION 3: BIODATA ===== -->
+    <section class="biodata all-section" id="biodata">
+      <h2>About Me</h2>
+      <p>A brief introduction about myself</p>
+
+      <div class="box-container">
+        <div class="box">Full Name</div>
+        <div class="box">Education</div>
+        <div class="box">Pekerjaan</div>
+        <div class="box">Contact</div>
+        <div class="box">Hobi</div>
+        <div class="box">Alamat</div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: PORTOFOLIO ===== -->
+    <section class="portfolio all-section" id="portfolio">
+      <h2>Portfolio</h2>
+
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <div class="item"></div>
+          <h3>Proyek 1</h3>
+          <p>Deskripsi proyek 1</p>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item"></div>
+          <h3>Proyek 2</h3>
+          <p>Deskripsi proyek 2</p>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="item"></div>
+          <h3>Proyek 3</h3>
+          <p>Deskripsi proyek 3</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
